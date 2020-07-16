@@ -32,19 +32,20 @@ function SearchBar(props: ISearchBarProps){
 
     const [HasFocus, setHasFocus] = useState<boolean>(false);
 
+    const handleSubmit = () =>{
+        console.log(SearchQuery);
 
-    const handleSubmit = () => {
-        if(SearchQuery?.length !== 0 && SearchQuery !== null && SearchQuery !== "")
+        if(SearchQuery?.length !== 0 && SearchQuery !== null && SearchQuery !== "") {
             let UserInput: IUserInput = {
-                SearchQuery: SearchQuery,
-                StartDate: StartDate,
-                EndDate: EndDate
+                    SearchQuery: SearchQuery,
+                    StartDate: StartDate,
+                    EndDate: EndDate
+                }
+                props.SetUserInput(UserInput);
+            } else {
+                setHasFocus(true);
             }
-            props.SetUserInput(UserInput);
-        } else {
-            setHasFocus(true);
         }
-    }
 
     return(
         <div className="SearchBarContainer">
