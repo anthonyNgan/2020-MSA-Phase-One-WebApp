@@ -1,1 +1,7 @@
-Hosted on https://msa-2020-devops1.azurewebsites.net/
+NSA API with Material-Ui
+
+To run the app:
+
+1.NPM Install
+
+2.NPM Start
