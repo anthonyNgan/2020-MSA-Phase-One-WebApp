@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Button, Grid, TextField} from '@material-ui/core';
 import {KeyboardDatePicker, MuiPickersUtilsProvider} from '@material-ui/pickers';
 import DateFnsUtils from '@date-io/date-fns';
-import { IUserInput } from '../Common/Interfaces';
+import { IUserInput } from '../../Common/Interfaces';
 import './SearchBar.css';
 
 
